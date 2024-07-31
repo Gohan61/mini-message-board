@@ -1,18 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const { messages } = require("./index");
+const message_controlller = require("../controllers/MessageController");
 
 router.get("/", (req, res, next) => {
   res.render("form");
 });
 
-router.post("/", (req, res, next) => {
-  messages.push({
-    text: req.body.message,
-    user: req.body.author,
-    added: new Date(),
-  });
-  res.redirect("/");
-});
+router.post("/", message_controlller.newMessage);
 
 module.exports = router;
