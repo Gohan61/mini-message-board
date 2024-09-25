@@ -6,11 +6,9 @@ This project uses EJS as a templating language for the frontend and Express + No
 
 This project is build according to the specification of the [Mini Message Board lesson](https://www.theodinproject.com/lessons/nodejs-mini-message-board)
 
-## Live website
+## Preview
 
 The message board takes the name and message of a user and displays it on the home page.
-
-Access the [Message board app](https://mini-message-board-odin-project.fly.dev)
 
 ![Mini message board](./mini-message-board-display.png)
 
